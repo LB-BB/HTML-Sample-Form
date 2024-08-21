@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+
+  <h1 id="title">Best Chicken Survey Form
+  </h1>
+</head>
+
+<body>
+  <div class="container">
+    <p id="description">Determine what kind of chicken is right for you.</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label">Name
+        </label>
+        <input class="form-control" required id="name" type="text" placeholder="Name" />
+      </div>
+      <div class="form-group">
+        <label id="email-label">Email
+        </label>
+        <input class="form-control" required id="email" type="email" placeholder="Email" />
+      </div>
+      <div class="form-group">
+        <label id="number-label">Age (optional)
+        </label>
+        <input class="form-control" id="number" type="number" min="13" max="120" placeholder="100" />
+      </div>
+      <div class="form-group">
+        <label>Which option best describes your favorite chicken colorway?
+        </label>
+        <select id="dropdown" class="form-control">
+          <option>Select</option>
+          <option>Black and White (Zebra)</option>
+          <option>White</option>
+          <option>Red/brown</option>
+          <option>Black</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>
+          Why do you want to keep chickens?
+        </label>
+        <label for="eggs">
+          <input id="eggs" value="eggs" type="checkbox" name="use-type" class="inline" checked /> Eggs
+        </label>
+        <label for="meat"><input id="meat" value="meat" type="checkbox" name="use-type"
+            class="inline" /> Meat
+        </label>
+        <label for="company"><input id="company" value="company" type="checkbox" name="use-type"
+            class="inline" /> Company
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="accommodations">Describe the area where you would keep chickens:
+        </label>
+        <textarea class="form-control" id="accommodations" name="accommodations" rows="3" cols="30"
+          placeholder="I have a 5x8 foot coop..."></textarea>
+      </div>
+      <div class="form-group">
+
+        <label>
+          Projected flock size:
+        </label>
+        <label for="1-5">
+        </label>
+        <input id="1-5" value="1-5" type="radio" name="flock-size" checked /> 1-5
+        <label for="5-25">
+        </label>
+        <input id="5-25" value="5-25" type="radio" name="flock-size" /> 5-25
+        <label for="25-100">
+        </label>
+        <input id="25-100" value="25-100" type="radio" name="flock-size" /> 25-100
+        <label for="100+">
+        </label>
+        <input id="100+" value="100+" type="radio" name="flock-size" /> 100+
+      </div>
+      <div class="form-group">
+
+        <button id="submit" type="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
